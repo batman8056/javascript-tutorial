@@ -1,5 +1,5 @@
-//Srting Property
-//-----------------
+//String Property
+//---------------
 const movie = {
     title : "a",
     year : 1998,

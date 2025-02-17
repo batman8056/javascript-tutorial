@@ -1,11 +1,8 @@
 //Prime Number
 //------------
 //prime(number can divide itself and 1 only)
-//composite 
-
 //12 = 1,2,3,4,6,12 (we will never get any remainder it will be 0)
 //can be devided evenly be its factors
-
 //11 = 1,11 -prime
 ///13 = 1,13 -prime
 
@@ -14,6 +11,9 @@ const showPrime = limit => {
         if (isPrime(num)) console.log(num);
     }
 };
+// Checking if n = 29 is Prime
+// √29 = 5.38
+// We only check divisibility for 2, 3, 4, 5, not 6...28.
 const isPrime = num => {
     if (num < 2) return false;
     for (let fact = 2; fact <= Math.sqrt(num); fact++) {

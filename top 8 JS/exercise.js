@@ -1,6 +1,6 @@
 
 // Reverse a string:
-// ********************
+// *****************
 
 const reverseString = (str) => {
     let reversed = '';
@@ -15,7 +15,7 @@ console.log(reverseString("hello"));  // Output: "olleh"
 
 
 // Sort an array:
-// ********************
+// **************
 
 const sortArray = (arr) => {
     for (let i = 0; i < arr.length; i++) {
@@ -33,7 +33,7 @@ console.log(sortArray([5, 2, 9, 1, 5, 6]));  // Output: [1, 2, 5, 5, 6, 9]
 
 
 // Find the missing numbers in a given array:
-// ************************************************
+// ******************************************
 
 const findMissingNumbers = (arr) => {
     let missingNumbers = [];

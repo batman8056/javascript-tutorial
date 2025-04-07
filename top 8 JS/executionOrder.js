@@ -156,3 +156,20 @@
 //     .catch((error) => console.log("Caught:", error))
 //     .finally(() => console.log("Cleanup task executed"));
 //  Caught:Error occurred! - Cleanup task executed
+
+
+
+
+// var globalVar = "I am global"; 
+// function showGlobal() {
+//   console.log(globalVar); // ✅ Accessible
+//   if (true) {
+//     let blockLet = "I am block-scoped";
+//     const blockConst = "I am also block-scoped";
+//     var blockVar = "I ignore block scope!";
+//   }
+//   return blockVar
+// }
+
+// const show = showGlobal();
+// console.log(show); // ✅ Accessible globally

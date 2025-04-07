@@ -38,9 +38,8 @@ console.log(totalAge); // 105
 
 
 // If you want to use them on objects, 
-// you can convert the object into an array first 
+// you can convert the object into an array first
 // using methods like:
-
 // Object.keys(obj) → array of keys
 // Object.values(obj) → array of values
 // Object.entries(obj) → array of [key, value]
@@ -59,6 +58,7 @@ console.log(above25); // [30]
     science: 80,
     english: 85
   };
+  console.log(Object.entries(scores));
   const subjects = Object.entries(scores).map(([subject, score]) => {
     return `${subject} scored ${score}`;
   });
@@ -77,11 +77,11 @@ console.log(above25); // [30]
     return `${subject} scored ${score}`;
   });
   
-  console.log(subjects);
+  console.log(subject);
   // ["math scored 90", "science scored 80", "english scored 85"]
 
 
-//   unique object filter using ES6 features
+//unique object filter using ES6 features
   const arr = [
     { place: "san francisco", name: "jane" },
     { place: "san francisco", name: "jane" },

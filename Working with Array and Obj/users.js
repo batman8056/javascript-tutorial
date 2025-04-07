@@ -79,3 +79,21 @@ console.log(above25); // [30]
   
   console.log(subjects);
   // ["math scored 90", "science scored 80", "english scored 85"]
+
+
+//   unique object filter using ES6 features
+  const arr = [
+    { place: "san francisco", name: "jane" },
+    { place: "san francisco", name: "jane" },
+    { place: "new york", name: "james" }
+  ];
+  function unique(arr) {
+    const uniqu = [];
+    for (let obj of arr) {
+        if (!uniqu.some(item => JSON.stringify(item) === JSON.stringify(obj))) {
+            uniqu.push(obj);
+        }
+    }
+    return uniqu;
+}
+console.log(unique(arr))
